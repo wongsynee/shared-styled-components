@@ -1,0 +1,30 @@
+import * as React from 'react';
+import styled from "styled-components";
+import Header from '../blocks/header';
+import Main from '../blocks/main';
+import Footer from '../blocks/footer';
+
+interface IIndexPageProps {
+}
+
+interface IMainLayoutState {
+}
+
+const StaticApp = styled.div`
+    background-color: #eca6f4;
+    padding: 30px;
+`
+
+class IndexPage extends React.Component<IIndexPageProps, IMainLayoutState> {
+    public render() {
+        return (
+            <StaticApp>
+                <Header />
+                <Main />
+                <Footer />
+            </StaticApp>
+        );
+    }
+}
+
+export default IndexPage;
